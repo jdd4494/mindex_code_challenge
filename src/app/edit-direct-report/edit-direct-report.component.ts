@@ -26,7 +26,7 @@ export class EditDirectReportComponent {
     this.saveClickStream$.next(event);
 
     // [TODO] Is there a cleaner way of passing in form data
-    this.dialogRef.close(event.target.elements[3].value);
+    this.dialogRef.close(event.target[3].value);
   }
 
   closeClick(event:Event){

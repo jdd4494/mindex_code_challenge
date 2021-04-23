@@ -23,7 +23,7 @@ export class EmployeeComponent {
 
   constructor(public dialog: MatDialog) {}
 
-  editButtonClick(event:Event, index:Number) {
+  editButtonClick(event:Event, index:number) {
       console.log("EDIT: " + index);
       this.editClickStream$.next(event);
 
@@ -46,7 +46,7 @@ export class EmployeeComponent {
       });
   }
 
-  deleteButtonClick(event:Event, index:Number){
+  deleteButtonClick(event:Event, index:number){
      console.log("DELETE");
      this.deleteClickStream$.next(event);
 
