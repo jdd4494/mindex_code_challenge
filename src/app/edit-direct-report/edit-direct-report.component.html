@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>UPDATE COMPENSATION</h1>
+<div mat-dialog-content>
+  <form (submit) = "saveClick($event)">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="{{data.firstName}}" disabled=true><br><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" value="{{data.lastName}}" disabled=true><br><br>
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" value="{{data.title}}" disabled=true><br><br>
+    <label for="compensation">Compensation:</label><br>
+    <input type="text" id="compensation" name="compensation" value="{{data.compensation}}">
+    <br><br>
+    <button mat-button type = "submit">SAVE</button>
+    <button mat-button type="button" (click)="closeClick($event)">CANCEL</button>
+  </form>
+</div>
